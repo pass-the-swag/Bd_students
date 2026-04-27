@@ -8,10 +8,10 @@ namespace Bd_students
 {
     class Group
     {
-        public string GroupName { get; set; }
-        public string FacultyName { get; set; }
-        public int Year_fStudy { get; set; }
-        public List<Student> Students { get; set; }
+        public string GroupName {get; set;}
+        public string FacultyName {get; set;}
+        public int Year_fStudy {get; set;}
+        public List<Student> Students {get; set;}
 
         public Group(string groupName, string facultyName, int year_Study)
         {

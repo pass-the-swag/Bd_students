@@ -8,11 +8,10 @@ namespace Bd_students
 {
     class Lector : Guy
     {
-        public string TeacherId { get; set; }
-        public string Position { get; set; }
+        public string TeacherId {get; set;}
+        public string Position {get; set;}
 
-        public Lector(string fullName, int age, string email, string phoneNumber, string address,
-                       string teacherId, string position)
+        public Lector(string fullName, int age, string email, string phoneNumber, string address,string teacherId, string position)
             : base(fullName, age, email, phoneNumber, address)
         {
             TeacherId = teacherId;

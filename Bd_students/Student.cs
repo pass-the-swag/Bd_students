@@ -13,8 +13,7 @@ namespace Bd_students
         public string FacultyName { get; set; }
         public double AverageGrade { get; set; }
 
-        public Student(string fullName, int age, string email, string phoneNumber, string address,
-                       string studentId, string groupName, string facultyName, double averageGrade)
+        public Student(string fullName, int age, string email, string phoneNumber, string address,string studentId, string groupName, string facultyName, double averageGrade)
             : base(fullName, age, email, phoneNumber, address)
         {
             StudentId = studentId;

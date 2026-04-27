@@ -8,9 +8,9 @@ namespace Bd_students
 {
     class Faculty
     {
-        public string FacultyName { get; set; }
-        public int Found { get; set; }
-        public List<Group> Groups { get; set; }
+        public string FacultyName {get; set;}
+        public int Found {get; set;}
+        public List<Group> Groups {get; set;}
 
         public Faculty(string facultyName, int foundationYear)
         {

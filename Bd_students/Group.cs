@@ -12,6 +12,8 @@ namespace Bd_students
         public string FacultyName {get; set;}
         public int Year_fStudy {get; set;}
         public List<Student> Students {get; set;}
+        public Lector GroupLector {get; set;}
+        public void SetLector(Lector lector) => GroupLector = lector;
 
         public Group(string groupName, string facultyName, int year_Study)
         {

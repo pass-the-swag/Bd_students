@@ -8,26 +8,19 @@ namespace Bd_students
 {
     class Faculty
     {
-        public string FacultyName {get; set;}
-        public int Found {get; set;}
+        public string Name {get; set;}
         public List<Group> Groups {get; set;}
+        public List<Lector> Lectors {get; set;}
 
-        public Faculty(string facultyName, int foundationYear)
+        public Faculty(string name)
         {
-            FacultyName = facultyName;
-            Found = foundationYear;
+            Name = name;
             Groups = new List<Group>();
+            Lectors = new List<Lector>();
         }
 
-        public void AddGroup(Group group)
-        {
-            Groups.Add(group);
-        }
-
-        public override string ToString()
-        {
-            return $"Факультет: {FacultyName}, Год оснвания: {Found}";
-        }
+        public void AddGroup(Group group) => Groups.Add(group);
+        public void AddLector(Lector lector) => Lectors.Add(lector);
+        public override string ToString() => $"Факультет: {Name}, Групп: {Groups.Count}, Преподавателей: {Lectors.Count}";
     }
-
 }
